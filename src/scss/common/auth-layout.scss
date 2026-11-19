@@ -1,0 +1,110 @@
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    min-height: 100dvh;
+
+    &__logo {
+        border-right: 1px solid #d4d6e0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img {
+        max-width: 100%;
+        max-height: 100dvh;
+    }
+
+    &__form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.enter {
+    max-width: 325px;
+    width: 100%;
+    padding: 30px 0;
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__item {
+        label {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+        }
+    }
+
+    &__text {
+        color: #9796a1;
+    }
+
+    &__input {
+        box-shadow: 15px 20px 45px 0 rgba(233, 233, 233, 0.25);
+        background: #fff;
+        padding: 22px 20px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+
+        &::placeholder {
+            color: #9796a1;
+        }
+    }
+
+    &__error {
+        font-size: 12px;
+        color: red;
+        margin-top: 10px;
+    }
+
+    .enter &__btn {
+        box-shadow: 0 10px 40px 0 rgba(122, 129, 190, 0.16);
+        padding: 20px;
+        text-align: center;
+        margin: 0 auto;
+        font-weight: 600;
+        font-size: 15px;
+        text-transform: uppercase;
+        line-height: 120%;
+        justify-content: center;
+        
+        &:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    }
+
+    &__desc, &__link {
+        font-weight: 600;
+        font-size: 14px;
+        text-align: center;
+        color: #5b5b5e;
+    }
+    
+    &__link {
+        color: #fe724c;
+    }
+    
+    &__info {
+        display: grid;
+        justify-items: center;
+        margin-top: 30px;
+        text-align: center;
+    }
+    
+    &__desc {
+        margin-top: 15px;
+    }
+}
